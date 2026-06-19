@@ -18,5 +18,10 @@ function multiply(a, b) {
     return a * b;
 }
 
+function substract(a, b) {
+    return a - b;
+}
+
 // Oefening 3
-operate(addExercise(2, 3, multiply))
+operate(2, 3, multiply)
+operate(2, 3, substract)

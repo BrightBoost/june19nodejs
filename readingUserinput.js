@@ -1,11 +1,4 @@
-const readline = require("readline");
+const prompt = require("prompt-sync")();
 
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
-
-rl.question("What is your name? ", function(answer) {
-  console.log("Hello " + answer + "!");
-  rl.close();
-});
+const name = prompt("What is your name? ");
+console.log("Hello, " + name + "!");

@@ -8,8 +8,6 @@ console.log("My name is " + name + " and I am " + age + " years old.");
  * This is a multi-line comment
  */
 
-// list of pokemon
-let pokemon = ["Dialga", "Charmander", "Bulbasaur", "Squirtle"];
 
 // object dialga
 let dialga = {
@@ -48,3 +46,53 @@ function processUserInput(callback) {
 processUserInput(greet);
 processUserInput(greetArrow);
 processUserInput(printArrowShort);
+
+let add = (a, b) => a + b;
+
+// regular vs triple equality
+// usually you want triple eq
+let nr5 = 5;
+let word5 = "5";
+
+let same5 = nr5 === word5; // true for ==
+console.log(same5);
+
+// if statements
+let trafficLight = "green";
+
+if (trafficLight === "green") {
+  console.log("Go!");
+} else if (trafficLight === "yellow") {
+  console.log("Slow down!");
+} else if (trafficLight === "red") {
+  console.log("Stop!");
+} else {
+  console.log("Invalid traffic light color.");
+}
+
+// loops
+// regular for
+for(let i = 0; i < 10; i++) {
+    console.log(i);
+}
+
+// while
+let i = 0;
+while(i < 10) {
+    console.log(i);
+    i++;
+}
+
+// for in
+// list of pokemon
+let pokemon = ["Dialga", "Charmander", "Bulbasaur", "Squirtle"];
+
+// print index
+for(let p in pokemon) {
+    console.log(p + " - " + pokemon[p]);
+}
+
+// for of - prints values
+for(let p of pokemon) {
+    console.log(p);
+}

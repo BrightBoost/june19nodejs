@@ -4,10 +4,12 @@ let guessed = false;
 let listOfGuesses = [];
 
 const randomNumber = Math.floor(Math.random() * 100) + 1;
-const number = prompt('Guess a number');
 
 while (guessed == false) {
+    let number = parseInt(prompt('Guess a number'));
+
     if (number === randomNumber) {
+        listOfGuesses.push(number);
         console.log('You guessed it in: ' + listOfGuesses.length + 'tries');
         guessed = true;
     } else if (number < randomNumber) {

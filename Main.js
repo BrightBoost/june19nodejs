@@ -25,3 +25,5 @@ function substract(a, b) {
 // Oefening 3
 operate(2, 3, multiply)
 operate(2, 3, substract)
+
+

@@ -8,3 +8,8 @@ function add(a, b) {
 let addExercise = (a, b) => {
     return a + b;
 }
+
+// Oefening 2
+function operate(a, b, fn) {
+    return fn(a, b);
+}

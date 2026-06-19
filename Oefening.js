@@ -12,10 +12,10 @@ while (guessed == false) {
         guessed = true;
     } else if (number < randomNumber) {
         console.log('Guess higher!');
-        number.push(listOfGuesses)
+        listOfGuesses.push(number);
     } else if (number > randomNumber) {
         console.log('Guess lower!');
-        number.push(listOfGuesses)
+        listOfGuesses.push(number);
     } else {
         console.log('Invalid');
     }

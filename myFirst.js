@@ -96,3 +96,4 @@ for(let p in pokemon) {
 for(let p of pokemon) {
     console.log(p);
 }
+
